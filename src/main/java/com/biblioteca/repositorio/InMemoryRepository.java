@@ -34,7 +34,6 @@ public class InMemoryRepository<T> {
         return entity;
     }
 
-
     /** b) Buscar una entidad por ID */
     public Optional<T> findById(Long id) {
         return Optional.ofNullable(store.get(id));
